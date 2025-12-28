@@ -565,4 +565,70 @@ header {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
+
+}
+
+/* styles.css */
+/* (All previous styles remain unchanged up to the events section) */
+
+/* ... [Keep all your existing CSS here] ... */
+
+/* Add or update these at the bottom */
+
+/* Footer Social Icons */
+.footer-social img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: opacity 0.3s;
+}
+
+.footer-social a:hover img {
+  opacity: 0.8;
+}
+
+/* Partners Section */
+.footer-partners {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-partners p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Header logo sizing */
+.logo-icon {
+  height: 50px;
+  width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-logos {
+    gap: 30px;
+  }
+  .partner-logo {
+    height: 55px;
+  }
+  .footer-social img {
+    width: 32px;
+    height: 32px;
+  }
 }
