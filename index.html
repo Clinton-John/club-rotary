@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kabarak Rotary Club - Service Above Self</title>
+  <title>Kabarak University Rotary Club - Service Above Self</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="https://logos-world.net/wp-content/uploads/2024/01/Rotary-Symbol.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -151,41 +152,53 @@
     </div>
   </section>
 
-  <!-- Volunteer Section -->
+  <!-- Volunteer Section (Redesigned) -->
   <section id="volunteer" class="section volunteer">
     <div class="container">
       <h2>Become a Volunteer</h2>
-      <p>Join our community projects and make a difference. Fill out the form below to get started.</p>
-      <form class="volunteer-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Why do you want to volunteer? (Optional: mention specific event)" required></textarea>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+      <p class="section-intro">Join our community projects and make a difference. Fill out the form below to get started.</p>
+      <form class="form attractive-form volunteer-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Why do you want to volunteer? (Optional: mention specific event)</label>
+          <textarea id="message" placeholder="Tell us your motivation" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up Now</button>
       </form>
     </div>
   </section>
 
-  <!-- Donate Section -->
+  <!-- Donate Section (Updated with Links) -->
   <section id="donate" class="section donate">
     <div class="container">
       <h2>Donate to Support Our Cause</h2>
-      <p>Your contributions help fund our projects. Choose your preferred method below.</p>
+      <p class="section-intro">Your contributions help fund our projects. Choose your preferred method below.</p>
       <div class="donate-options">
         <div class="donate-card">
           <h3>M-Pesa</h3>
           <p>Paybill: 123456<br>Account: RotaryKabarak</p>
-          <button class="btn btn-secondary">Donate via M-Pesa</button>
+          <a href="https://mpesa.example.com/pay?paybill=123456&account=RotaryKabarak" target="_blank" rel="noopener" class="btn btn-secondary">Donate via M-Pesa</a>
         </div>
         <div class="donate-card">
           <h3>PayPal</h3>
           <p>Secure online donations</p>
-          <button class="btn btn-secondary">Donate via PayPal</button>
+          <a href="https://www.paypal.com/donate?hosted_button_id=EXAMPLE" target="_blank" rel="noopener" class="btn btn-secondary">Donate via PayPal</a>
         </div>
         <div class="donate-card">
           <h3>Bank Transfer</h3>
           <p>Account: Kabarak Rotary Club<br>Bank: XYZ Bank<br>Swift: ABCDE</p>
-          <button class="btn btn-secondary">Learn More</button>
+          <a href="#contact" class="btn btn-secondary">Get Details</a>
         </div>
       </div>
     </div>
@@ -195,18 +208,30 @@
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>Get in touch for more information or partnerships.</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message" required></textarea>
+      <p class="section-intro">Get in touch for more information or partnerships.</p>
+      <form class="form attractive-form contact-form">
+        <div class="form-group">
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Your Message</label>
+          <textarea id="contact-message" placeholder="Write your message here" required></textarea>
+        </div>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
       <div class="newsletter">
         <h3>Subscribe to Our Newsletter</h3>
         <p>Stay updated on upcoming events and projects.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
+        <form class="form attractive-form newsletter-form">
+          <div class="form-group">
+            <label for="newsletter-email">Enter your email</label>
+            <input type="email" id="newsletter-email" placeholder="your.email@example.com" required>
+          </div>
           <button type="submit" class="btn btn-secondary">Subscribe</button>
         </form>
       </div>
