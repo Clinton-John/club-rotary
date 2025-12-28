@@ -73,11 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  // Placeholder form alerts
+  // Placeholder form alerts (simulating submission)
   document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', e => {
       e.preventDefault();
       alert('Thank you! Your submission has been received (demo mode).');
+      form.reset();
     });
   });
 });
