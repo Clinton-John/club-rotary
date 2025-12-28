@@ -1,11 +1,12 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kabarak University Rotary Club - Service Above Self</title>
+  <title>Kabarak Rotary Club - Service Above Self</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="https://via.placeholder.com/32?text=R" type="image/png">
+  <link rel="icon" href="https://logos-world.net/wp-content/uploads/2024/01/Rotary-Symbol.png" type="image/png">
 </head>
 <body>
 
@@ -13,13 +14,14 @@
   <header id="header">
     <div class="container nav">
       <div class="logo">
-        <img src="https://via.placeholder.com/40?text=⚙️" alt="Rotary Logo" class="logo-icon">
+        <img src="https://logos-world.net/wp-content/uploads/2024/01/Rotary-Symbol.png" alt="Rotary International Logo" class="logo-icon">
         <span>Kabarak University Rotary Club</span>
       </div>
       <nav class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#events">Events</a>
         <a href="#volunteer">Volunteer</a>
         <a href="#donate">Donate</a>
         <a href="#contact">Contact</a>
@@ -77,7 +79,7 @@
           <p>Regular visits to local orphanages providing supplies, mentorship, and joy to children in need.</p>
         </div>
         <div class="project-card">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Education Workshops">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b075b644?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Education Workshops">
           <h3>Education Workshops</h3>
           <p>Free workshops for underprivileged youth, focusing on skills development and career guidance.</p>
         </div>
@@ -92,20 +94,43 @@
           <p>Tree planting drives and clean-up campaigns to promote sustainability in our community.</p>
         </div>
       </div>
-      <!-- Gallery Feature -->
-      <div class="gallery">
-        <h3>Project Gallery</h3>
-        <div class="gallery-grid">
-          <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Gallery 1">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Gallery 2">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Gallery 3">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Gallery 4">
+    </div>
+  </section>
+
+  <!-- Events Section (Dynamic) -->
+  <section id="events" class="section events">
+    <div class="container">
+      <h2>Events Calendar</h2>
+      <p>Stay updated with our community service activities, club fellowships, and special initiatives. Everyone is welcome to participate!</p>
+
+      <div class="events-tabs">
+        <button class="tab-btn active" data-tab="upcoming">Upcoming Events</button>
+        <button class="tab-btn" data-tab="past">Past Event Highlights</button>
+      </div>
+
+      <div id="upcoming" class="events-tab-content active">
+        <div class="events-grid" id="eventsGrid">
+          <!-- Dynamically injected by script.js -->
+        </div>
+      </div>
+
+      <div id="past" class="events-tab-content">
+        <h3 class="gallery-title">Past Event Highlights</h3>
+        <div class="gallery-grid masonry">
+          <img src="https://i0.wp.com/rotaryserviceblog.org/wp-content/uploads/2021/05/kidshelpingkids4.jpg?fit=1200%2C900&ssl=1" alt="Feeding program">
+          <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10223252025522583" alt="Volunteers at orphanage">
+          <img src="https://clubrunner.blob.core.windows.net/00000010523/Images/image0.jpeg" alt="Orphanage support">
+          <img src="https://www.newtimes.co.rw/thenewtimes/uploads/images/2024/10/14/thumbs/1200x700/61884.jpg" alt="Tree planting">
+          <img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3330925559834495310" alt="Tree planting drive">
+          <img src="https://i.ytimg.com/vi/9zzkl-MYnNM/maxresdefault.jpg" alt="Medical camp">
+          <img src="https://www.rotary.org/sites/default/files/styles/w_600/public/RYLA-hero-2023-20220711_US_096.jpg?itok=Kpy2eww4" alt="Youth leadership workshop">
+          <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1163750929188499" alt="Youth peace event">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section (Added Feature) -->
+  <!-- Testimonials Section -->
   <section class="section testimonials">
     <div class="container">
       <h2>What Our Members Say</h2>
@@ -135,7 +160,7 @@
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Why do you want to volunteer?" required></textarea>
+        <textarea placeholder="Why do you want to volunteer? (Optional: mention specific event)" required></textarea>
         <button type="submit" class="btn btn-primary">Sign Up</button>
       </form>
     </div>
@@ -177,9 +202,9 @@
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
-      <!-- Newsletter Signup (Added Feature) -->
       <div class="newsletter">
         <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated on upcoming events and projects.</p>
         <form class="newsletter-form">
           <input type="email" placeholder="Enter your email" required>
           <button type="submit" class="btn btn-secondary">Subscribe</button>
@@ -199,21 +224,37 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#events">Events</a>
           <a href="#volunteer">Volunteer</a>
           <a href="#donate">Donate</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="footer-social">
-          <a href="#" aria-label="Facebook"><img src="https://via.placeholder.com/24?text=FB" alt="Facebook"></a>
-          <a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/24?text=TW" alt="Twitter"></a>
-          <a href="#" aria-label="Instagram"><img src="https://via.placeholder.com/24?text=IG" alt="Instagram"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Facebook-icon-white-png.png" alt="Facebook">
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <img src="https://www.freeiconspng.com/uploads/twitter-x-logo-icon-transparent-background-12.webp" alt="X (Twitter)">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="https://www.clipartmax.com/png/middle/138-1384528_instagram-icon-white-transparent.png" alt="Instagram">
+          </a>
         </div>
       </div>
-      <p class="footer-copyright">&copy; 2025 Kabarak University Rotary Club. All rights reserved.</p>
+
+      <div class="footer-partners">
+        <p>Supported by:</p>
+        <div class="partners-logos">
+          <img src="https://nica.team/wp-content/uploads/2020/02/220px-Kabarak_University_logo-5.jpe" alt="Kabarak University Logo" class="partner-logo">
+          <img src="https://logos-world.net/wp-content/uploads/2021/11/UN-Logo.png" alt="United Nations Logo" class="partner-logo">
+        </div>
+      </div>
+
+      <p class="footer-copyright">© 2025 Kabarak University Rotary Club. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Back to Top Button (Added Feature) -->
+  <!-- Back to Top Button -->
   <button id="backToTop" class="back-to-top">↑</button>
 
   <script src="script.js"></script>
